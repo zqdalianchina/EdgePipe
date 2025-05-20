@@ -22,3 +22,4 @@
     *   **UUID 路径 `/${userID}`:** 返回一个 VLESS 配置链接字符串 (`vless://...`)。这个链接包含了连接到这个 Workers 代理所需的所有信息（UUID, Host, 端口 443, TLS, WebSocket, Path 等），方便用户复制到 VLESS 客户端软件中使用。
     *   **其他 HTTP 路径:** 返回 404 Not Found。
 9.  **错误处理:** 代码包含了一些基本的错误处理，例如头部解析失败、UUID 不匹配、命令不支持、SOCKS5 握手或认证失败、连接目标失败等，并在出现错误时关闭连接并返回错误信息。
+原始出处： By https://t.me/CF_NAT
